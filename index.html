@@ -94,6 +94,9 @@
                         movieCard.append('<p>' + movie.description + '</p>');
                         $('#searchResults').append(movieCard);
                     });
+                },
+                error: function (){
+                    $("#searchResults p").text("Ha ocurrido un error, intente nuevamente!");
                 }
             });
         });
